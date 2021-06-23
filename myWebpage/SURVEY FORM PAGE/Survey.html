@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey form</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="Survey.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 id="title"> Planetario Survey Form </h1>
+    <p id="description"><i>A space for everyone</i></p>
+  </header>
+  <img class="stars star1" src="https://pngimg.com/uploads/sun/sun_PNG13442.png">
+  <img class="stars star2" src="https://pngimg.com/uploads/sun/sun_PNG13442.png">
+  <img class="stars star3" src="https://pngimg.com/uploads/sun/sun_PNG13442.png">
+  <img class="stars star4" src="https://pngimg.com/uploads/sun/sun_PNG13442.png">
+  <img class="stars star5" src="https://pngimg.com/uploads/sun/sun_PNG13442.png">
+  <img class="stars star6" src="https://pngimg.com/uploads/sun/sun_PNG13442.png">
+  <img class="stars star7" src="https://pngimg.com/uploads/sun/sun_PNG13442.png">
+  <div class="form-section">
+    <form id="survey-form" action="#" method="GET">
+      
+      <div class="inputs strings"> <!-- NAME -->
+       <label for="name" id="name-label">Name</label><br>
+       <input type="text" id="name" placeholder="Enter name" required>
+      </div>
+
+      <div class="inputs strings">  <!-- EMAIL -->
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" placeholder="Enter email" required>
+      </div>
+
+      <div class="inputs strings"> <!-- AGE -->
+        <label for="number" id="number-label"> Age (optional) </label><br>
+        <input type="number" id="number" placeholder="Enter age" min="18" max="120" required>
+      </div>
+      
+      <div class="inputs gender"> <!-- GENDER -->
+        <span> Select gender</span>
+        <select id="dropdown">
+          <option disabled selected value>Select gender</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+
+      <div class="inputs rating">  <!-- USER RATING -->
+        <span> Tell us how we do </span>
+        <label for="highly-satisfied">
+          <input type="radio" id="highly-satisfied" name="user-review" value="highly-satisfied" checked>
+          Highly satisfied
+        </label>
+        <label for="satisfied">
+          <input type="radio" id="satisfied" name="user-review" value="satisfied">
+          Satisfied
+        </label>
+        <label for="good-enough">
+          <input type="radio" id="good-enough" name="user-review" value="good-enough">
+          Good enough
+        </label>
+        <label for="bad">
+          <input type="radio" id="bad" name="user-review" value="bad">
+          bad
+        </label>
+      </div>
+      
+      <div class="inputs rating"> <!-- PLANETS USER WANTS TO ADD -->
+        <span> What do you think we should add? </span>
+        <label for="jupiter">
+          <input type="checkbox" name="planet" value="jupiter">
+          Jupiter
+        </label>
+        <label for="earth">
+          <input type="checkbox" name="planet" value="earth">
+          Earth
+        </label>
+        <label for="mars">
+          <input type="checkbox" name="planet" value="mars">
+          Mars
+        </label>
+        <label for="pluto">
+          <input type="checkbox" name="planet" value="pluto">
+          Pluto
+        </label>
+        <label for="neptune">
+          <input type="checkbox" name="planet" value="neptune"  >
+          Neptune
+        </label>
+      </div>
+      <p style="text-align: center"> <!-- COMMENT SECTION -->
+        Add some comments and suggestions for us!
+      </p>
+      <textarea class="comments" placeholder="Tell us what you think..."></textarea>
+
+      <input id="submit" type="submit" value="submit">
+    
+    </form>
+  </div>
+</body>
+</html>
